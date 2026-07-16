@@ -1,7 +1,7 @@
 # pyatv 0.18.0 crashes on Python 3.14 with "RuntimeError: There is no current
 # event loop" (asyncio.get_event_loop() no longer creates a loop). Stay on
 # Python 3.13 until pyatv supports 3.14.
-FROM python:3.13-alpine
+FROM python:3.14-alpine
 
 WORKDIR /app
 
