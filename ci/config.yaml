@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jaedle/pipeline-service/main/schema/config.schema.json
+
+docker:
+  platforms: linux/amd64,linux/arm64
+  repository: jaedle/pyatv-mqtt-bridge-docker
+  tag: 11.0.0-fixed
+
+interval: 24h

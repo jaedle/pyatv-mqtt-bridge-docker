@@ -1,0 +1,7 @@
+{
+  "name": "pyatv-mqtt-bridge-docker",
+  "private": true,
+  "dependencies": {
+    "@sebbo2002/pyatv-mqtt-bridge": "11.0.0"
+  }
+}
