@@ -25,7 +25,7 @@ All three are kept up to date by Dependabot. Do not bump the Python base image t
 Drop-in replacement for the upstream image:
 
 ```sh
-docker run -v $PWD/config.json:/app/config.json jaedle/pyatv-mqtt-bridge-docker:11.0.0-fixed
+docker container run -v $PWD/config.json:/app/config.json jaedle/pyatv-mqtt-bridge-docker:11.0.0-fixed
 ```
 
 ## Release

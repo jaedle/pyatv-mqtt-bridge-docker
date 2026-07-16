@@ -9,8 +9,11 @@ RUN apk add --no-cache nodejs npm bash dumb-init && \
     addgroup -g 1000 app && \
     adduser -u 1000 -G app -s /bin/sh -D app
 
+# build-base is needed on platforms without prebuilt wheels (e.g. miniaudio on arm64)
 COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apk add --no-cache --virtual .build-deps build-base && \
+    pip install --no-cache-dir -r requirements.txt && \
+    apk del .build-deps
 
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev && \

@@ -3,6 +3,6 @@
 docker:
   platforms: linux/amd64,linux/arm64
   repository: jaedle/pyatv-mqtt-bridge-docker
-  tag: 11.0.0-fixed
+  tag: 11.0.0
 
 interval: 24h
